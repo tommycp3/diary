@@ -12,13 +12,24 @@ class App extends Component {
     // state
     this.state = {
       title: '',
-      body: ''
+      body: '',
+      notes: ''
     };
     // bind
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.renderNotes = this.renderNotes.bind(this)
 
   }
+
+
+  // lifeclycle
+  componentDidMount() {
+    database.on('value', snapshot => {
+      this.setState({ notes: snapshot.val() });
+    });
+  }
+
 
 
   // handle change
@@ -40,6 +51,20 @@ class App extends Component {
     this.setState({
       title: '',
       body: ''
+    });
+  }
+
+
+
+  // render notes
+  renderNotes() {
+    return _.map(this.state.notes, (note, key) => {
+      return (
+        <div key="key">
+          <h2>{note.title}</h2>
+          <p>{note.body}</p>
+        </div>
+      )
     });
   }
 
@@ -83,6 +108,12 @@ class App extends Component {
 
 
             </form>
+
+
+            {this.renderNotes()}
+
+
+
           </div>
 
 
