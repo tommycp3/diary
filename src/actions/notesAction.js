@@ -19,3 +19,7 @@ export function saveNote(note) {
 
 }
 
+export function deleteNote(id) {
+    return dispatch => database.child(id).remove();
+}
+

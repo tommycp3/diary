@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import { connect } from 'react-redux';
-import { getNotes, saveNote } from '../actions/notesAction';
+import { getNotes, saveNote, deleteNote } from '../actions/notesAction';
+import NoteCard from './NoteCard';
 
 
 
@@ -64,10 +65,15 @@ class App extends Component {
   renderNotes() {
     return _.map(this.props.notes, (note, key) => {
       return (
-        <div key="key">
-          <h2>{note.title}</h2>
+        <NoteCard key={key}>
+          <h1>{note.title}</h1>
           <p>{note.body}</p>
-        </div>
+          <button
+            className="btn btn-danger btn-xs"
+            onClick={() => this.props.deleteNote(key)}>
+            Delete
+          </button>
+        </NoteCard>
       )
     });
   }
@@ -112,8 +118,9 @@ class App extends Component {
 
 
             </form>
-
-
+            <br />
+            <br />
+            <br />
             {this.renderNotes()}
 
 
@@ -134,5 +141,5 @@ function mapStateToProps(state, ownProps) {
 
 }
 
-export default connect(mapStateToProps, { getNotes, saveNote })(App);
+export default connect(mapStateToProps, { getNotes, saveNote, deleteNote })(App);
 // https://hackernoon.com/import-export-default-require-commandjs-javascript-nodejs-es6-vs-cheatsheet-different-tutorial-example-5a321738b50f
