@@ -13,6 +13,7 @@ class Login extends Component {
                         <button className="btn btn-danger btn-lg">Login with Google</button>
                     </div>
 
+                    <br />
 
                     <div className="col-sm-6">
                         <button className="bt btn-success btn-lg">Login with Twitter</button>
