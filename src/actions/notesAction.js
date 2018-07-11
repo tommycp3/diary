@@ -1,5 +1,6 @@
-import { GET_NOTES } from '../actionTypes';
+import { GET_NOTES, NOTE_STATUS } from '../actionTypes';
 import { database } from '../firebase';
+
 
 export function getNotes() {
     return dispatch => {
