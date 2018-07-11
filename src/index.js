@@ -43,12 +43,7 @@ const Header = () => (
 
 );
 
-
-
 // provide the store to react
-
-
-
 
 ReactDOM.render(
     <Provider store={store}>
