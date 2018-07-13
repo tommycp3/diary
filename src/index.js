@@ -12,6 +12,7 @@ import rootReducer from './reducers/index';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Login from './components/Login';
 import Header from './routes/Header';
+import LoadingComponet from './components/LoadingComponent';
 
 // create redux store -> reducers -> 'actions - actionType' | applyMiddleware()
 // redux store requires reducers which requires actions
@@ -23,14 +24,15 @@ const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk
 ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
-            <div>
-                <Header />
-                <Switch>
-                    <Route path="/" component={App} exact={true} />
-                    <Route path="/login" component={Login} exact={true} />
-                </Switch>
-            </div>
-
+            <LoadingComponet>
+                <div>
+                    <Header />
+                    <Switch>
+                        <Route path="/" component={App} exact={true} />
+                        <Route path="/login" component={Login} exact={true} />
+                    </Switch>
+                </div>
+            </LoadingComponet>
         </BrowserRouter>
     </Provider>, document.getElementById('root'));
 registerServiceWorker();
