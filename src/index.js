@@ -13,7 +13,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Login from './components/Login';
 import Header from './routes/Header';
 import LoadingComponet from './components/LoadingComponent';
-import AuthenticatedComponent from './components/AuthenticatedComponent'
+import AuthenticatedComponent from './components/AuthenticatedComponent';
+import AOCSalesComponent from './components/AOCSalesComponent';
 // create redux store -> reducers -> 'actions - actionType' | applyMiddleware()
 // redux store requires reducers which requires actions
 
@@ -29,9 +30,11 @@ ReactDOM.render(
                     <Header />
                     <Switch>
                         <Route path="/login" component={Login} exact={true} />
+                        <Route path="/AOCSalesComponent" component={AOCSalesComponent} exact={true} />
                         <AuthenticatedComponent>
                             <Route path="/" component={App} exact={true} />
                         </AuthenticatedComponent>
+                        
 
                     </Switch>
                 </div>
