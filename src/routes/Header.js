@@ -16,7 +16,7 @@ class Header extends Component {
                             <span className="icon-bar" />
                         </button>
 
-                        <Link className="navbar-brand" to="/" >DIARY2018</Link>
+                        <Link className="navbar-brand" to="/" >Anatomy Of Consensus (AOC)</Link>
 
                     </div>
 
