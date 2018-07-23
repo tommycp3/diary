@@ -20,7 +20,7 @@ class AboutAOC extends Component {
                     </p>
                     <ul>
                         <li>Governments to trust eachother (preventing wars).</li>
-                        <li>Governments Departments to trust eachother.</li>
+                        <li>Government departments to trust each other.</li>
                         <li>Banks to trust each other</li>
                         <li>Mend the devide between corporations, governments and it's citizens.</li>
                         <li>And truely live the peer to peer dream where we treat each other as equals.</li>
