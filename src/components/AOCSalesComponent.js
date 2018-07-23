@@ -19,7 +19,8 @@ class AOCSalesComponent extends Component {
                 <div className="row text-center">
                     <div className="col-sm-12 jumbotron" style={{ marginTop: '-20px' }}>
                         <h1>Weclome to <b>A</b>natomy<b>O</b>f<b>C</b>onsensus</h1>
-                        <p><i>"The best no fluff education system that teaches you the power of blockchain by using it."</i></p>
+                        <h1></h1>
+                        <p><i>Congratulations you are now logged in, read below to get introduced to this idea of consensus through the eyes of the blockchain. </i></p>
                     </div>
                 </div>
                 <div className="container">
