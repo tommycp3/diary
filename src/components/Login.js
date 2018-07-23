@@ -3,6 +3,22 @@ import { connect } from 'react-redux';
 import { googleLogin, twitterLogin } from '../actions/userAction';
 
 class Login extends Component {
+
+    //just before the component is about to mount
+    componentWillMount() {
+        if (this.props.user !== null) {
+            // console.log(this.props.history)
+            this.props.history.push('/')
+        }
+    };
+
+    // the next time the component will recieve new props 
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.user !== null) {
+            nextProps.history.push('/');
+        }
+    }
+
     render() {
         return (
             <div>
@@ -42,8 +58,8 @@ class Login extends Component {
                         <li>Add email-password login functions, so we don't have to rely on google or twitter connect.</li>
                         <li>Add the <a href="https://www.screencast.com/t/Pz6kWPzSM" target="_blank">following draft copy</a> to the AOC product description sales component with a comments box so we can improve this  message, and also begin crafting different flagship approaches.</li>
                         <li>Add section for regulators and government.</li>
-                        
-                        
+
+
                     </ul>
                     <p>PLEASE NOTE: Anatomy of Consensus actively practices <a href="https://en.wikipedia.org/wiki/Radical_transparency" target="_blank">Radical Transparency</a>. If there is something you feel passionate about or can be imporved, join our <a href="https://t.me/joinchat/A9GMWgyW9DDHa8dGWBpcIQ" target="_blank">Telegram group</a>, and the community will guide you to fufilling your immediate purpose.</p>
                 </div>
@@ -56,5 +72,14 @@ class Login extends Component {
 
 }
 
+
+function mapStateToProps(state) {
+    return {
+        user: state.user
+    }
+
+};
+
+
 // connect function takes
-export default connect(null, { googleLogin, twitterLogin })(Login);
+export default connect(mapStateToProps, { googleLogin, twitterLogin })(Login);
