@@ -25,12 +25,35 @@ class Login extends Component {
     render() {
         return (
             <div>
-                <div className="continer-fluid">
+                <div className="container-fluid">
                     <div className="row text-center">
                         <div className="col-sm-12 jumbotron" style={{ marginTop: '-20px' }}>
                             <h1>Welcome to <b>A</b>natomy<b>O</b>f<b>C</b>onsensus</h1>
                             <p><i>"The best no fluff education system that teaches you the power of blockchain <b>by using it.</b>"</i></p>
                         </div>
+                    </div>
+
+                </div>
+
+
+                <div className="container">
+                    <div className="col-sm-12">
+                        
+                        <AboutAOC />
+                    </div>
+
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+                <div className="continer-fluid">
+                    <div className="row text-center">
+                        
 
 
 
@@ -49,17 +72,24 @@ class Login extends Component {
                         </div>
 
 
-                        <div className="col-sm-12">
-                            <p>Testing above</p>
-                            <AboutAOC />
-                        </div>
+
 
                     </div>
+                </div>
+                <br />
+                <br />
+
+                <div className="container">
+                    <div className="jumbotron">
+                        
+                       <p> <i>commenting box coming soon...</i></p>
+                    </div>
+
                 </div>
 
 
 
-                
+
             </div>
 
 
