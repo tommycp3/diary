@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { googleLogin, twitterLogin } from '../actions/userAction';
+import AOCSalesComponent from './AOCSalesComponent';
 
 class Login extends Component {
 
@@ -29,6 +30,7 @@ class Login extends Component {
                             <p><i>"The best no fluff education system that teaches you the power of blockchain by using it."</i></p>
                         </div>
 
+                        <p>Create an account below to learn how to buy Ether to get access to this system.</p>
 
                         <div className="col-sm-6">
                             <button className="btn btn-danger btn-lg" onClick={this.props.googleLogin}>Login with Google</button>
@@ -52,8 +54,8 @@ class Login extends Component {
                         <li>Put a form here for people to subscribe to the waiting list.</li>
                         <li>Add footer, with links to trello, github</li>
                         <li>Add AOC sales page.</li>
-                        <li>Fix up site navigation.</li>
-                        <li>Add page for develpers where developers get 20%, referers get 30%, and origional owners (Tom and Sam) get 50%, we can reach consensus on what percentages are fair for different offerings as pepole get inspired and realise they are working with a world class modern self-sovereign winning system.</li>
+                        <li>Fix up site navigation. - DONE</li>
+                        <li>Add page for develpers where developers get 20%, referers get 30%, and origional owners get 50%, we can reach consensus on what percentages are fair for different offerings as pepole get inspired and realise they are working with a world class modern self-sovereign winning system.</li>
                         <li>Add page describing road map where the end goal is for this to turn into a Decentralised Automous Organisaton(DAO).</li>
                         <li>Add email-password login functions, so we don't have to rely on google or twitter connect.</li>
                         <li>Add the <a href="https://www.screencast.com/t/Pz6kWPzSM" target="_blank">following draft copy</a> to the AOC product description sales component with a comments box so we can improve this  message, and also begin crafting different flagship approaches.</li>

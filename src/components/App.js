@@ -3,7 +3,8 @@ import _ from 'lodash';
 import { connect } from 'react-redux';
 import { getNotes, saveNote, deleteNote } from '../actions/notesAction';
 import NoteCard from './NoteCard';
-import {getUser } from '../actions/userAction';
+import { getUser } from '../actions/userAction';
+import AOCSalesComponent from './AOCSalesComponent';
 
 
 class App extends Component {
@@ -82,52 +83,66 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-sm-6 col-sm-offset-3">
-            <form onSubmit={this.handleSubmit}>
-              <div className="form-group">
-                <input
-                  onChange={this.handleChange}
-                  value={this.state.title}
-                  type="text"
-                  name="title"
-                  className="form-control no-border"
-                  placeholder="Title..."
-                  required
-                />
-              </div>
+      <div>
+        <div className="cointainer">
 
-              <div className="form-group">
-                <textarea
-                  onChange={this.handleChange}
-                  value={this.state.body}
-                  type="text"
-                  name="body"
-                  className="form-control no-border"
-                  placeholder="Body..."
-                  required
-                />
-              </div>
-
-              <div className="form-group">
-                <button className="btn btn-primary col-sm-12">Save</button>
+        <AOCSalesComponent />
 
 
-              </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
 
 
-            </form>
-            <br />
-            <br />
-            <br />
-            {this.renderNotes()}
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-sm-6 col-sm-offset-3">
+              <form onSubmit={this.handleSubmit}>
+                <div className="form-group">
+                  <input
+                    onChange={this.handleChange}
+                    value={this.state.title}
+                    type="text"
+                    name="title"
+                    className="form-control no-border"
+                    placeholder="Title..."
+                    required
+                  />
+                </div>
 
+                <div className="form-group">
+                  <textarea
+                    onChange={this.handleChange}
+                    value={this.state.body}
+                    type="text"
+                    name="body"
+                    className="form-control no-border"
+                    placeholder="Body..."
+                    required
+                  />
+                </div>
+
+                <div className="form-group">
+                  <button className="btn btn-primary col-sm-12">Save</button>
+
+
+                </div>
+
+
+              </form>
+              <br />
+              <br />
+              <br />
+              {this.renderNotes()}
+
+
+
+            </div>
 
 
           </div>
-
-
         </div>
       </div>
     );

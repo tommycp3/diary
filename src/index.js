@@ -27,14 +27,15 @@ ReactDOM.render(
         <BrowserRouter>
             <LoadingComponet>
                 <div>
-                    <Header />
+
                     <Switch>
                         <Route path="/login" component={Login} exact={true} />
                         <Route path="/AOCSalesComponent" component={AOCSalesComponent} exact={true} />
                         <AuthenticatedComponent>
+                            <Header />
                             <Route path="/" component={App} exact={true} />
                         </AuthenticatedComponent>
-                        
+
 
                     </Switch>
                 </div>
