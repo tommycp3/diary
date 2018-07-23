@@ -25,13 +25,7 @@ class App extends Component {
   }
 
 
-  // lifeclycle
-  componentDidMount() {
-    this.props.getNotes();
-    // database.on('value', snapshot => {
-    //   this.setState({ notes: snapshot.val() });
-    this.props.getUser();
-  };
+  
 
 
 
