@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { googleLogin, twitterLogin } from '../actions/userAction';
 import AOCSalesComponent from './AOCSalesComponent';
 import DeveloperComponent from './DeveloperComponent';
+import AboutAOC from './AboutAOC';
 
 class Login extends Component {
 
@@ -28,7 +29,7 @@ class Login extends Component {
                     <div className="row text-center">
                         <div className="col-sm-12 jumbotron" style={{ marginTop: '-20px' }}>
                             <h1>Welcome to <b>A</b>natomy<b>O</b>f<b>C</b>onsensus</h1>
-                            <p><i>"The best no fluff education system that teaches you the power of blockchain by using it."</i></p>
+                            <p><i>"The best no fluff education system that teaches you the power of blockchain <b>by using it.</b>"</i></p>
                         </div>
 
 
@@ -45,6 +46,12 @@ class Login extends Component {
 
                         <div className="col-sm-6">
                             <button className="bt btn-success btn-lg" onClick={this.props.twitterLogin}>Login with Twitter</button>
+                        </div>
+
+
+                        <div className="col-sm-12">
+                            <p>Testing above</p>
+                            <AboutAOC />
                         </div>
 
                     </div>
