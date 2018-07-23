@@ -30,7 +30,11 @@ class Login extends Component {
                             <p><i>"The best no fluff education system that teaches you the power of blockchain by using it."</i></p>
                         </div>
 
-                        <p>Create an account below to learn how to buy Ether to get access to this system.</p>
+
+
+                        <div className="col-sm-12">
+                            <p>Create an account below to learn how to buy Ether to get access to this system.</p>
+                        </div>
 
                         <div className="col-sm-6">
                             <button className="btn btn-danger btn-lg" onClick={this.props.googleLogin}>Login with Google</button>
