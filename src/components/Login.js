@@ -38,28 +38,25 @@ class Login extends Component {
 
                 <div className="container">
                     <div className="col-sm-12">
-                        
+
                         <AboutAOC />
                     </div>
 
                 </div>
 
+                
                 <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
+
 
                 <div className="continer-fluid">
                     <div className="row text-center">
-                        
-
-
 
                         <div className="col-sm-12">
-                            <p>Create an account below to learn how to buy Ether to get access to this system.</p>
+                            <p><b>Create an account below to learn how to buy Ether to get access to this system.</b></p>
+                            <br />
+                            <br />
                         </div>
+                        
 
                         <div className="col-sm-6">
                             <button className="btn btn-danger btn-lg" onClick={this.props.googleLogin}>Login with Google</button>
@@ -81,8 +78,8 @@ class Login extends Component {
 
                 <div className="container">
                     <div className="jumbotron">
-                        
-                       <p> <i>commenting box coming soon...</i></p>
+
+                        <p> <i>commenting/suggestions box coming soon...</i></p>
                     </div>
 
                 </div>

@@ -37,10 +37,10 @@ class AboutAOC extends Component {
                         society that flourishes and works for all parties once again.
                     </p>
                     <p>
-                        Oftentimes it's hard to describe new paradibm shifts and fare more effective 
-                        experiencing the process, which is why as you explore this site we offer to take you 
+                        Oftentimes it's hard to describe new paradibm shifts and fare more effective
+                        experiencing the process, which is why as you explore this site we offer to take you
                         by the hand and guide you through the process of understanding the Anatomy of Consensus (AOC)
-                        throught the eyes of this humanity saving technology where you are empowered to interact with 
+                        throught the eyes of this humanity saving technology where you are empowered to interact with
                         the ethereum blockchain global computing network.
                     </p>
                     <br />
@@ -50,12 +50,12 @@ class AboutAOC extends Component {
 
                     <h2>What can I expect?</h2>
                     <p>
-                        You will get hands on experience excuting almost raw transactions with 
+                        You will get hands on experience excuting almost raw transactions with
                         the new web 30. (web of trust).
                     </p>
                     <p>
-                        As you step through this process we will take you behind the scenies of 
-                        this educational experience and show you how to explore the ethereum 
+                        As you step through this process we will take you behind the scenies of
+                        this educational experience and show you how to explore the ethereum
                         transactions that power this process.
                     </p>
                     <p>
@@ -63,9 +63,9 @@ class AboutAOC extends Component {
                     </p>
                     <p>
                         Due to the transparent nature of the blockchain embeded in the protocol level of ethereum
-                        there is no point wasting your time with fluff and no point trying to sell you anthing.  If 
+                        there is no point wasting your time with fluff and no point trying to sell you anthing.  If
                         you like the future of what blockchain stands for thein it will make snese to learn more.
-                    
+
                     </p>
                     <br />
                     <br />
@@ -73,8 +73,8 @@ class AboutAOC extends Component {
 
                     <h2>How do I get started?</h2>
                     <p>
-                        Good question, simply login with your google account below, and follow the steps to aquire 
-                        some ether (the token used to power smart contracts) and then you'll beable to exexute your 
+                        Good question, simply login with your google account below, and follow the steps to aquire
+                        some ether (the token used to power smart contracts) and then you'll beable to exexute your
                         first Smart Contract that will give you access to the Blockchain Starter Pack where you will learn:
                     </p>
 
@@ -87,6 +87,10 @@ class AboutAOC extends Component {
                     </ul>
 
                 </div>
+
+
+
+                
             </div>
 
 
