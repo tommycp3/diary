@@ -5,6 +5,7 @@ import { getNotes, saveNote, deleteNote } from '../actions/notesAction';
 import NoteCard from './NoteCard';
 import { getUser } from '../actions/userAction';
 import AOCSalesComponent from './AOCSalesComponent';
+import BuyEther from './BuyEther';
 
 
 class App extends Component {
@@ -80,7 +81,8 @@ class App extends Component {
       <div>
         <div className="cointainer">
 
-        <AOCSalesComponent />
+        
+        <BuyEther />
 
 
         </div>
